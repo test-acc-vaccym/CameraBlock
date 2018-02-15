@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">CameraBlock</string>
 
+    <!-- Quick tile -->
+    <string name="enable_camera">Enable camera</string>
+    <string name="disable_camera">Disable camera</string>
+
     <!-- Notification -->
     <string name="device_admin_not_granted">CameraBlock needs to be set as a device admin in order to be able to control camera functionality</string>
 

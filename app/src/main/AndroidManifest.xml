@@ -26,6 +26,18 @@
             </intent-filter>
         </receiver>
         <receiver android:name=".Receivers.DisableCameraReceiver"/>
+
+        <!-- Services -->
+        <service android:name=".Services.QuickCameraToggleTile"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/disable_camera"
+            android:icon="@drawable/ic_camera"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
