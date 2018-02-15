@@ -55,14 +55,9 @@ public class QuickCameraToggleTile extends TileService {
         Tile tile = getQsTile();
         DeviceAdminHelper dah = new DeviceAdminHelper(getApplicationContext());
 
-        if(!dah.isAdmin()) {
-            tile.setState(Tile.STATE_UNAVAILABLE);
-            tile.setLabel(getApplicationContext().getText(R.string.disable_camera));
-        } else if (dah.isCameraDisabled()) {
-            tile.setState(Tile.STATE_ACTIVE);
+        if (dah.isCameraDisabled()) {
             tile.setLabel(getApplicationContext().getText(R.string.enable_camera));
         } else {
-            tile.setState(Tile.STATE_INACTIVE);
             tile.setLabel(getApplicationContext().getText(R.string.disable_camera));
         }
 

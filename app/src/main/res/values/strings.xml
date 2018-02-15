@@ -12,4 +12,10 @@
     <string name="camera_enabled_toast">Camera enabled</string>
     <string name="camera_disabled_toast">Camera disabled</string>
 
+
+    <!-- UI -->
+    <string name="enable_device_admin_button">Enable device admin</string>
+    <string name="persistent_notification_switch">Show notification while camera enabled</string>
+    <string name="made_by">Made by @RichyHBM</string>
+
 </resources>
