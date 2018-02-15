@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CameraBlock</string>
+
+    <!-- Notification -->
+    <string name="device_admin_not_granted">CameraBlock needs to be set as a device admin in order to be able to control camera functionality</string>
+
+    <!-- Toasts -->
+    <string name="camera_enabled_toast">Camera enabled</string>
+    <string name="camera_disabled_toast">Camera disabled</string>
+
 </resources>

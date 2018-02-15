@@ -66,7 +66,7 @@ public class NotificationHelper {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, null)
                 .setContentTitle(context.getText(titleId))
                 .setContentText(message)
-                .setSmallIcon(R.drawable.ic_camera_block);
+                .setSmallIcon(R.drawable.ic_camera);
 
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
 

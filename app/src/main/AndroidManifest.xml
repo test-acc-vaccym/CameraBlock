@@ -12,20 +12,20 @@
         <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <!-- Receivers -->
         <receiver android:name=".Receivers.CameraAdminReceiver"
             android:label="@string/app_name"
-            android:description="@string/admin_description"
             android:permission="android.permission.BIND_DEVICE_ADMIN">
             <meta-data android:name="android.app.device_admin" android:resource="@xml/camera_admin" />
             <intent-filter>
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>
         </receiver>
+        <receiver android:name=".Receivers.DisableCameraReceiver"/>
     </application>
 
 </manifest>
